@@ -13,7 +13,7 @@ public class Main {
 
         for(int i= 0; i < L; i++){
             int code = hash.charAt(i) - 'a' + 1;
-            hashCode = (hashCode + code * pow % M);
+            hashCode = (hashCode + (code * pow)) % M;
             pow = pow * 31 % M;
         }
 
